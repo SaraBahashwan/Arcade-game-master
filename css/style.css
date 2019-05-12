@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%); /* Inspired by Udacity Homepage */
+    background-size: cover;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-shadow: 1px 1px .5px black;
+    font-family:cursive;
+    color: white;
+    height: 100vh;
+}
+h1,h2,h3
+{
+     color: #c80fa0;
+     font-size: 1.7em;
+
+}
+/* Game over screen styles */
+
+#game-over {
+    width: 100vw;
+    height: 100vh;
+    font-size: 3em;
+}
+
+#congra {
+    width: 100vw;
+    height: 100vh;
+    font-size:2em;
+}
+
+/* Restart button styles */
+
+#restart {
+    cursor: pointer;
+    margin-top: 5em;
+    box-shadow: 1px 3px 2px black;
+    text-shadow: inherit;
+    font-family: inherit;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.726);
+    width: 300px;
+    height: 100px;
+    color: white;
+    background: radial-gradient(lightskyblue, lightseagreen, rgb(90, 38, 110));
+    transition: 0.1s ease-in-out;
+}
+#restart:active {
+    transform: scale(0.95);
+}
+
+#restart:hover {
+    transform: scale(1.05);
+}
+
+#playAgain {
+    cursor: pointer;
+    margin-top: 5em;
+    box-shadow: 1px 3px 2px black;
+    text-shadow: inherit;
+    font-family: inherit;
+    font-size: 2em;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.726);
+    width: 300px;
+    height: 100px;
+    color: white;
+    background: radial-gradient(lightskyblue, lightseagreen, rgb(90, 38, 110));
+    transition: 0.1s ease-in-out;
+}
+
+#playAgain:active {
+    transform: scale(0.95);
+}
+
+#playAgain:hover {
+    transform: scale(1.05);
+}
+
+
+/* This class will be used to hide the canvas and others when displaying the game over screen */
+
+.hidden {
+    display: none;
+}
+
+
+/* Creates a shadow behind the canvas */
+
+canvas {
+    z-index: 500;
+}
+
+
+/* Stars div styles */
+
+.stars {
+    color: rgb(255, 238, 0);
+    font-size: 1.2em;
+}
+
+
+/* Fixes the stars div having a margin */
+
+.stars>p {
+    margin: 3px;
+}
+
+
+/* Hearts div styles */
+
+#hearts {
+    color: rgb(194, 41, 41);
+    font-size: 1.2em;
+    margin: 3px;
+}
+
+
+/* Level div styles */
+
+.level {
+    color: rgb(209, 80, 248);
+    font-size: 1.2em;
+    margin: 3px;
+}
